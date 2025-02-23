@@ -105,12 +105,12 @@ variable "controlplane_tags" {
 }
 variable "controlplane_cpu_cores" {
   type        = number
-  default     = 4
+  default     = 2
   description = "Quantity of CPU cores to apply to the controlplane virtual machines"
 }
 variable "controlplane_memory" {
   type        = number
-  default     = 10240
+  default     = 4096
   description = "Quantity of memory (megabytes) to apply to the controlplane virtual machines"
 }
 variable "controlplane_datastore" {
@@ -170,17 +170,17 @@ variable "workernode_tags" {
 }
 variable "workernode_cpu_cores" {
   type        = number
-  default     = 10
+  default     = 2
   description = "Quantity of CPU cores to apply to the workernode virtual machines"
 }
 variable "workernode_memory" {
   type        = number
-  default     = 51200
+  default     = 4096
   description = "Quantity of memory (megabytes) to apply to the workernode virtual machines"
 }
 variable "workernode_datastore" {
   type        = string
-  default     = "FlashPool"
+  default     = "ssd2tb"
   description = "Datastore used for the workernode virtual machines"
 }
 variable "workernode_disk_size" {

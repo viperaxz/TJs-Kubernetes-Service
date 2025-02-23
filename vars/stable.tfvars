@@ -1,6 +1,6 @@
 # Proxmox #######################
-proxmox_hostname                = "earth.sol.milkyway"
-proxmox_ssh_key_path            = "~/.ssh/sol.milkyway"
+proxmox_hostname                = "192.168.10.1"
+proxmox_ssh_key_path            = "~/.ssh/id_ed25519"
 proxmox_resource_pool           = "Kubernetes-Stable"
 
 
